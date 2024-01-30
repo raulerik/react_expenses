@@ -1,4 +1,4 @@
-import './ExpenseItem.css'
+import './ExpenseItem.css';
 
 function ExpenseItem(){
     return (
@@ -12,4 +12,4 @@ function ExpenseItem(){
     )
 }
 
-export default ExpenseItem
+export default ExpenseItem;
