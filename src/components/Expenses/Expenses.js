@@ -1,27 +1,14 @@
-import './Expenses.css'
-import Card from '../UI/Card'
+import "./Expenses.css"
 import ExpenseItem from './ExpenseItem'
+import Card from "../UI/Card.js";
 
-const Expenses = (props) => {
-    const expenses = [
-        { 
-          date: new Date(2024, 17, 6),
-          title: 'New Book',
-          price: 30.99
-        },
-        {
-          date: new Date(2023, 9, 6),
-          title: 'New jeans',
-          price: 69.99 
-        }  
-    ] 
-    return (
-        <Card className="expenses">
-          <ExpenseItem expenseData={expenses[0]} />
-          <ExpenseItem expenseData={expenses[1]} />
-        </Card>
-
-    )
+function Expenses(props){
+	return(
+		<Card className="expenses">
+			<ExpenseItem expenseData={props.expensesData[0]}></ExpenseItem>
+        	<ExpenseItem expenseData={props.expensesData[1]}></ExpenseItem>
+		</Card>
+		)
 }
 
-export default Expenses
+export default Expenses;
